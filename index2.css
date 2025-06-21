@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+.nav{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+}
 .header{
     width: 100%;
     background-color: #D0E2E7;
@@ -20,6 +26,7 @@
 }
 .headright{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     font-size: 25px;
     gap: 15px;
@@ -43,6 +50,7 @@
 }
 .headul{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     list-style: none;
     gap: 30px;
@@ -105,6 +113,7 @@ a{
     /* background-color: blue; */
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 10px;
     font-size: 20px;
     color: #012F4A;
@@ -120,6 +129,7 @@ a{
 .buttons1{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 50px;
     margin: 50px;
     margin-top: 60px;
@@ -203,6 +213,7 @@ a{
 }
 .rs{
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     gap: 18px;
     
@@ -268,6 +279,7 @@ a{
     padding-top: 15px;
     cursor: pointer;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     /* align-items: start; */
     gap: 10px;
@@ -286,6 +298,7 @@ a{
 }
 .box10{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 30px;
     cursor: pointer;
@@ -297,6 +310,7 @@ a{
 }
 .box12{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
     justify-content: center;
@@ -307,12 +321,14 @@ a{
 }
 .box13{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 30px;
     cursor: pointer;
 }
 .footer2{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 15px 50px;
@@ -320,4 +336,85 @@ a{
     font-size: 20px;
     color: white;
     cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width:500px) {
+    .categorysection,.buttons1,.rs,.shopping,.boxes,.child11,.bottombox,.box10,.box12,.box13{
+        display: block;
+    }
+    .head1,.headright,.main,.headul,.search,.profile,.category1,.posterimage,.dealoftheday,.dealcard,.footer2{
+        display: flex;
+    }
+
+    .buttons1{
+        display: flex;
+    }
+    .main{
+        gap: 16px;
+    }
+    .search input{
+        padding-left: 15px;
+        padding-right: 0px;
+    }
+    .buttons1{
+        gap: 20px;
+        margin-left: 50px;
+    }
+    .headfiction{
+        width: 200px;
+    }
+    .posterimage{
+        gap: 20px;
+    }
+    .dealcard{
+        justify-content: center;
+        gap: 50px;
+    }
+    .discover{
+        font-size: 20px;
+    }
+    .viewall{
+        font-size: 18px;
+        padding: 15px 30px;
+    }
+    .box11{
+        margin-top: 30px;
+    }
+    .copyrights{
+        width: 50%;
+    }
+    .footer2 img{
+        width: 50%;
+    }
+}
+
+
+
+@media (min-width:700px) and (max-width:880px){
+    .main{
+        display: flex;
+        gap: 5px;
+    }
+    .headul{
+        gap: 20px;
+    }
+    .search input{
+        padding: 10px 30px 10px 20px;
+    }
+     .posterimage img{
+        width: 20%;
+    }
+    .dealcard{
+        justify-content: center;
+    }
+    .category1{
+        margin: 30px;
+        justify-content: center;
+    }
+    .footer2 img{
+        width: 30%;
+    }
 }

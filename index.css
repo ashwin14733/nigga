@@ -3,11 +3,14 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-/* .nav{
+.nav{
     position: sticky;
     top: 0;
-} */
-
+    z-index: 1;
+}
+main{
+    z-index: -1;
+}
 .header{
     width: 100%;
     background-color: #D0E2E7;
@@ -46,6 +49,11 @@
     flex-wrap:wrap ;
     align-items: center;
     justify-content: space-between;
+    background-color: white;
+    position: sticky;
+    width: 100%;
+    justify-content: space-around;
+    gap: 80px;
 
 }
 .head1{
@@ -53,6 +61,7 @@
 }
 .headul{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     list-style: none;
     gap: 30px;
@@ -98,7 +107,8 @@ a{
 .herosection{
     background-color: #D0E2E7;
     width: 100%;
-    height: 600px;
+    height: auto;
+    padding: 30px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -173,10 +183,13 @@ a{
 .heroimage{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 .img1{
     position: relative;
     left: 120px;
+    z-index: 0;
+    
 }
 .page{
     display: flex;
@@ -204,6 +217,7 @@ h4::first-letter{
     align-items: center;
     padding-top: 20px;
     cursor: pointer;
+    flex-wrap: wrap;
 }
 .shopnowbutton{
     padding: 10px 20px ;
@@ -218,6 +232,7 @@ h4::first-letter{
     align-items: center;
     position: relative;
     right: 52px;
+    flex-wrap: wrap;
 }
 .carddesign{
     display: flex;
@@ -229,12 +244,13 @@ h4::first-letter{
 }
 .crime{
     background-color: #18889A;
-    width: 25%;
+    /* width: 25%; */
     border-radius: 30px;
     padding: 20px;
     padding-left: 30px;
     display: flex;
     /* margin: 15px; */
+    margin: 15px 0px;
    
 }
 .cp{
@@ -258,13 +274,16 @@ h4::first-letter{
 }
 .america{
     background-color: #18889A;
-    width: 25%;
+    /* width: 25%; */
     /* height: 211px; */
     border-radius: 30px;
     padding: 20px;
     padding-left: 30px;
     display: flex;
+    /* flex-wrap: wrap; */
     /* margin: 15px; */
+    margin: 15px 0px;
+
    
 }
 .ap{
@@ -310,14 +329,17 @@ h4::first-letter{
 }
 .flower{
     background-color: #18889A;
-    width: 25%;
+    /* width: 25%; */
     border-radius: 30px;
     padding: 20px;
     padding-left: 30px;
     display: flex;
+    /* flex-wrap: wrap; */
     /* height: 211px; */
 
     /* margin: 15px; */
+    margin: 15px 0px;
+
    
 }
 .fp{
@@ -325,7 +347,7 @@ h4::first-letter{
     padding-top: 20px;
     font-size: 25px;
     color: white;
-    width: 100%;
+    width: 80%;
 }
 .fp1{
     color: white;
@@ -346,6 +368,7 @@ h4::first-letter{
     align-items: center;
     padding-top: 20px;
     cursor: pointer;
+    flex-wrap: wrap;
 }
 .shopnowbutton2{
     padding: 10px 20px ;
@@ -360,7 +383,9 @@ h4::first-letter{
     align-items: center;
     position: relative;
     right: 52px;
+    flex-wrap: wrap;
 }
+
 .toprating{
     width: 25%;
     background-color: #D0E2E7;
@@ -381,15 +406,19 @@ h4::first-letter{
     flex-wrap: wrap;
     margin-top: 50px;
     justify-content: space-evenly;
+    margin: 80px 10px;
 }
-.leftimage{
+/* .leftimage{
     width: 25%;
     height: 385px;
     background-color: #D0E2E7;
-    /* margin: 20px 50px; */
-}
+} */
 .lovehypothesis{
-    margin: 30px;
+    margin: 10px;
+    background-color: #D0E2E7;
+    padding: 30px;
+    border-radius: 10px;
+  
   
 }
 .loveright{
@@ -401,6 +430,7 @@ h4::first-letter{
     color: #18889A;
     font-size: 28px;
     margin-top: 15px;
+    width: 300px;
 }
 .star{
     margin-top: 30px;
@@ -518,16 +548,19 @@ h4::first-letter{
     padding-top: 20px;
     justify-content: space-between;
     position: relative;
+    flex-wrap: wrap;
     left: -5px;
     
 }
 .bottomleft{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
 }
 .bottomright{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 5px;
 
@@ -548,12 +581,14 @@ h4::first-letter{
 }
 .poster2{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     /* background-color: blue; */
 }
 .cart2{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     width: 210px;
     height: 50px;
@@ -597,6 +632,7 @@ h4::first-letter{
 }
 .last2{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding-top: 20px;
     justify-content: space-between;
@@ -606,11 +642,13 @@ h4::first-letter{
 }
 .bottomleft2{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
 }
 .bottomright2{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 5px;
 }
@@ -630,12 +668,14 @@ h4::first-letter{
 }
 .poster3{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     /* background-color: blue; */
 }
 .cart3{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     width: 210px;
     height: 50px;
@@ -679,6 +719,7 @@ h4::first-letter{
 }
 .last3{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding-top: 20px;
     justify-content: space-between;
@@ -688,11 +729,13 @@ h4::first-letter{
 }
 .bottomleft3{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
 }
 .bottomright3{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 5px;
 }
@@ -706,6 +749,7 @@ h4::first-letter{
     height: 250px;
     background-color: #D0E2E7;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
@@ -743,11 +787,13 @@ h4::first-letter{
 }
 .bottomleft4{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
 }
 .bottomright4{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 5px;
 }
@@ -777,6 +823,7 @@ h4::first-letter{
     color: #012F4A;
     margin: 50px;
     padding-bottom: 100px;
+    
     /* margin-bottom: 50px; */
     /* background-color: red; */
 }
@@ -803,6 +850,7 @@ h4::first-letter{
     padding-top: 15px;
     cursor: pointer;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     /* align-items: start; */
     gap: 10px;
@@ -821,6 +869,7 @@ h4::first-letter{
 }
 .box10{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 30px;
     cursor: pointer;
@@ -832,6 +881,7 @@ h4::first-letter{
 }
 .box12{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
     justify-content: center;
@@ -842,12 +892,14 @@ h4::first-letter{
 }
 .box13{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 30px;
     cursor: pointer;
 }
 .footer2{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 15px 50px;
@@ -855,4 +907,77 @@ h4::first-letter{
     font-size: 20px;
     color: white;
     cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width:500px){
+    body{
+        width: auto;
+    }
+    .profile,.herosection,.button,.rightcontent,.heroimage,.shopnow,.shopnowicon,.carddesign,.shopnow1.shopnowicon1,.shopnowicon2,.tpcard,.buy,.bottomcarddesign,.boxes,.child1,.bottombox,.box12,.box13{
+        display: block;
+    }
+    .head1,.search,.main,.page,.america,.flower,.buttons,.cardsection,.topsection,.last,.bottomleft,.bottomright,.poster2,.cart2,.last2,.bottomleft2,.bottomright2,.poster3,.cart3,.last3,.bottomleft3,.bottomright3,.topsection4,.last4,.bottomleft4,.bottomright4,.box10,.footer2{
+        display: flex;
+    }
+    .main{
+        gap: 16px;
+    }
+    .search input{
+        padding-left: 15px;
+        padding-right: 0px;
+    }
+    .img2{
+        margin-left: 140px;
+    }
+    .page{
+        gap: 2px;
+    }
+    .toprating,.topcategory{
+        width: 50%;
+    }
+    .top{
+        font-size: 20px;
+    }
+    .lh,.star,.bookpara,.dollar,.buttons{
+        margin-left: 18px;
+    }
+    .bookpara{
+        width: 350px;
+    }
+    .loveright{
+        width: 100%;
+    }
+    .box11{
+        margin-top: 30px;
+    }
+    .copyrights{
+        width: 50%;
+    }
+    .footer2 img{
+        width: 50%;
+    }
+}
+
+
+
+@media (min-width:700px) and (max-width:880px){
+    .main{
+        display: flex;
+        gap: 5px;
+    }
+    .headul{
+        gap: 20px;
+    }
+    .search input{
+        padding: 10px 30px 10px 20px;
+    }
+    .footer2 img{
+        width: 30%;
+    }
+    
+    
 }
